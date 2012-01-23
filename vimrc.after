@@ -1,3 +1,5 @@
+let g:ctrlp_working_path_mode = 0
+
 let NERDTreeIgnore=['\.o$', '\~$', '\.git/','\.swp$','\.pyc$']
 au BufRead,BufNewFile *.html set filetype=htmljinja
 au BufRead,BufNewFile *.wsgi set filetype=python
@@ -36,7 +38,7 @@ set expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
 let g:ackprg="ack -H --nocolor --nogroup --column --type-add coffeescript=.coffee --type-add sass=.sass,.scss"
 
-set wildignore+=*.o,*.jpg,*.jpeg,*.png,*.gif,*.psd,*.pyc,*.bz2,*.gz,*.zip,*.ico,*.tgz
+set wildignore+=/.DS*,*.o,*.jpg,*.jpeg,*.png,*.gif,*.psd,*.pyc,*.bz2,*.gz,*.zip,*.ico,*.tgz
 
 " For vivelohoy
 set wildignore+=uploads,media,blogs.dir
