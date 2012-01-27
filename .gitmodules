@@ -1,3 +1,6 @@
 [submodule "extradite"]
 	path = extradite
 	url = https://github.com/int3/vim-extradite
+[submodule "zencoding"]
+	path = zencoding
+	url = https://github.com/mattn/zencoding-vim.git
