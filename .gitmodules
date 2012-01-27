@@ -1,0 +1,3 @@
+[submodule "extradite"]
+	path = extradite
+	url = https://github.com/int3/vim-extradite
