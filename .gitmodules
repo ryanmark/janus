@@ -4,3 +4,6 @@
 [submodule "zencoding"]
 	path = zencoding
 	url = https://github.com/mattn/zencoding-vim.git
+[submodule "vim-pep8"]
+	path = vim-pep8
+	url = https://github.com/adrianrego/vim-pep8.git
