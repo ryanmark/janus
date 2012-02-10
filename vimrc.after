@@ -42,3 +42,5 @@ set wildignore+=/.DS*,*.o,*.jpg,*.jpeg,*.png,*.gif,*.psd,*.pyc,*.bz2,*.gz,*.zip,
 
 " For vivelohoy
 set wildignore+=uploads,media,blogs.dir
+
+let g:Powerline_symbols = 'fancy'

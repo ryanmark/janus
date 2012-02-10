@@ -1,5 +1,4 @@
 set guifont=Menlo\ for\ Powerline:h16
-let g:Powerline_symbols = 'fancy'
 
 syntax enable
 set background=dark
