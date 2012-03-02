@@ -7,3 +7,6 @@
 [submodule "vim-pep8"]
 	path = vim-pep8
 	url = https://github.com/adrianrego/vim-pep8.git
+[submodule "localvimrc"]
+	path = localvimrc
+	url = https://github.com/vim-scripts/localvimrc.git
