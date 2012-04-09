@@ -10,3 +10,6 @@
 [submodule "localvimrc"]
 	path = localvimrc
 	url = https://github.com/vim-scripts/localvimrc.git
+[submodule "vim-less"]
+	path = vim-less
+	url = https://github.com/groenewege/vim-less.git
