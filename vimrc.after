@@ -12,8 +12,8 @@ au BufRead,BufNewFile *.scss set filetype=scss
 au BufRead,BufNewFile *nginx* set ft=nginx
 au BufRead,BufNewFile *apache* set ft=apache
 
-au BufRead,BufNewFile * set tw=0
-au BufRead,BufNewFile * set textwidth=0
+au BufRead,BufNewFile * set tw=0 textwidth=0
+au BufEnter * set expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
 augroup json_autocmd 
     autocmd! 
@@ -28,19 +28,19 @@ augroup END
 set wrap
 
 " disable auto-wrapping
-set textwidth=0
-
-set expandtab shiftwidth=4 tabstop=4 softtabstop=4
+"set textwidth=0
 
 " au FileType php  set expandtab shiftwidth=4 tabstop=4 softtabstop=4
 " au FileType python  set expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
-
-let g:ackprg="ack -H --nocolor --nogroup --column --type-add coffeescript=.coffee --type-add sass=.sass,.scss"
+let g:ackprg="ack -H --nocolor --nogroup --column --type-add coffee=.coffee --type-add sass=.sass,.scss"
 
 set wildignore+=/.DS*,*.o,*.jpg,*.jpeg,*.png,*.gif,*.psd,*.pyc,*.bz2,*.gz,*.zip,*.ico,*.tgz
 
 " For vivelohoy
-set wildignore+=uploads,media,blogs.dir
+"set wildignore+=uploads,blogs.dir
 
 let g:Powerline_symbols = 'fancy'
+
+" Enable spell check
+setlocal spell spelllang=en_us
