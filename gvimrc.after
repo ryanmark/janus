@@ -4,6 +4,4 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-nnoremap <esc> :noh<return><esc>
-
 set guioptions=egmrt
