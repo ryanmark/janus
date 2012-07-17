@@ -13,3 +13,12 @@
 [submodule "vim-less"]
 	path = vim-less
 	url = https://github.com/groenewege/vim-less.git
+[submodule "nginx"]
+	path = nginx
+	url = https://github.com/vim-scripts/nginx.vim.git
+[submodule "python"]
+	path = python
+	url = https://github.com/vim-scripts/python.vim--Vasiliev.git
+[submodule "powerline"]
+	path = powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
