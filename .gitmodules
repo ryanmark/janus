@@ -22,3 +22,6 @@
 [submodule "powerline"]
 	path = powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "json"]
+	path = json
+	url = https://github.com/vim-scripts/JSON.vim.git

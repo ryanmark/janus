@@ -10,4 +10,4 @@ How you use this:
     ln -s ~/.janus/vimrc.after ~/.vimrc.after
     ln -s ~/.janus/gvimrc.after ~/.gvimrc.after
 
-And install the font `Menlo-Powerline.otf`.
+And install the font `Inconsolata-dz-Powerline.otf`.
