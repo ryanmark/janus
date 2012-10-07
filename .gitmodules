@@ -25,3 +25,6 @@
 [submodule "json"]
 	path = json
 	url = https://github.com/vim-scripts/JSON.vim.git
+[submodule "CSScomb-for-Vim"]
+	path = CSScomb-for-Vim
+	url = https://github.com/miripiruni/CSScomb-for-Vim.git
