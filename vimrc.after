@@ -44,3 +44,9 @@ let g:Powerline_symbols = 'fancy'
 
 " Enable spell check
 setlocal spell spelllang=en_us
+
+" Enable mouse
+set mouse=a
+
+" Moar pretty
+set t_Co=256
