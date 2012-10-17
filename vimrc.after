@@ -35,3 +35,9 @@ let g:Powerline_symbols = 'fancy'
 setlocal spell spelllang=en_us
 
 set sessionoptions-=options
+
+" Enable mouse
+set mouse=a
+
+" Moar pretty
+set t_Co=256
