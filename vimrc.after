@@ -41,3 +41,6 @@ set mouse=a
 
 " Moar pretty
 set t_Co=256
+
+" Format CSS
+autocmd filetype css setlocal equalprg=csstidy\ -\ --silent=true\ --sort_properties=true
