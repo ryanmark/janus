@@ -50,3 +50,9 @@ set mouse=a
 
 " Moar pretty
 set t_Co=256
+
+" Set terminal title
+let &titlestring = fnamemodify(getcwd(), ":t")
+set t_ts=]1;
+set t_fs=
+set title
