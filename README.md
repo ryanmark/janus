@@ -20,8 +20,8 @@ For powerline (on OS X):
 
     brew install ctags-exuberant
 
-For pep8:
+For flake8:
 
-    sudo pip install pep8    
+    sudo pip install flake8
 
 And install the font [Inconsolata-dz-Powerline.otf](https://gist.github.com/raw/1595572/51bdd743cc1cc551c49457fe1503061b9404183f/Inconsolata-dz-Powerline.otf).
