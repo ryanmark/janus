@@ -3,7 +3,9 @@ set guifont=Inconsolata-dz\ for\ Powerline:h16
 syntax enable
 set background=dark
 colorscheme solarized
-
-nnoremap <esc> :noh<return><esc>
+"set transparency=8
 
 set guioptions=egmrt
+
+set colorcolumn=80
+highlight ColorColumn guibg=#194550
