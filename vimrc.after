@@ -1,3 +1,4 @@
+" This makes the cmd-t feature work more good
 let g:ctrlp_working_path_mode = 0
 
 let NERDTreeIgnore=['\.o$', '\~$', '\.git/','\.swp$','\.pyc$']
@@ -11,28 +12,39 @@ au BufRead,BufNewFile *nginx* set ft=nginx
 au BufRead,BufNewFile *apache* set ft=apache
 
 au BufRead,BufNewFile * set tw=0 textwidth=0
-au BufEnter * set expandtab shiftwidth=4 tabstop=4 softtabstop=4
+au BufEnter *.php set noexpandtab shiftwidth=4 tabstop=4
+au BufEnter *.py set expandtab
+au BufEnter *.wsgi set expandtab
+"au BufEnter python set expandtab shiftwidth=4 tabstop=4 softtabstop=4
+"au BufEnter css,scss set expandtab shiftwidth=4 tabstop=4 softtabstop=4
+"au BufEnter javascript set expandtab shiftwidth=2 tabstop=2 softtabstop=2
+"au BufEnter json set expandtab shiftwidth=2 tabstop=2 softtabstop=2
+"au BufEnter php set expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
-augroup json_autocmd
-    autocmd!
-    autocmd FileType json set autoindent
-    autocmd FileType json set formatoptions=tcq2l
-    autocmd FileType json set textwidth=78 shiftwidth=2
-    autocmd FileType json set softtabstop=2 tabstop=8
-    autocmd FileType json set expandtab
-    autocmd FileType json set foldmethod=syntax
-augroup END
+"augroup json_autocmd
+    "autocmd!
+    "autocmd FileType json set autoindent
+    "autocmd FileType json set formatoptions=tcq2l
+    "autocmd FileType json set textwidth=78 shiftwidth=2
+    "autocmd FileType json set softtabstop=2 tabstop=8
+    "autocmd FileType json set expandtab
+    "autocmd FileType json set foldmethod=syntax
+"augroup END
 
 set wrap
 
 let g:ackprg="ack -H --nocolor --nogroup --column --type-add coffee=.coffee --type-add sass=.sass,.scss"
 
+" ignore stuff in cmd+t/ctrl-p
 set wildignore+=/.DS*,*.o,*.jpg,*.jpeg,*.png,*.gif,*.psd,*.pyc,*.bz2,*.gz,*.zip,*.ico,*.tgz
 
 let g:Powerline_symbols = 'fancy'
 
 " Enable spell check
-setlocal spell spelllang=en_us
+au BufEnter *.html setlocal spell spelllang=en_us
+au BufEnter *.md setlocal spell spelllang=en_us
+au BufEnter *.txt setlocal spell spelllang=en_us
+au BufEnter *.json setlocal spell spelllang=en_us
 
 set sessionoptions-=options
 
@@ -54,3 +66,5 @@ filetype plugin indent on
 " Format CSS
 autocmd filetype css setlocal equalprg=csstidy\ -\ --silent=true\ --sort_properties=true
 
+"make esc deselect everything
+nnoremap <esc> :noh<return><esc>
