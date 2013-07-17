@@ -7,5 +7,7 @@ colorscheme solarized
 
 set guioptions=egmrt
 
-set colorcolumn=80
+"set colorcolumn=80
+"set colorcolumn=80
+execute "set colorcolumn=" . join(range(81,335), ',')
 highlight ColorColumn guibg=#194550

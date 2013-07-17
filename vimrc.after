@@ -1,7 +1,10 @@
 " This makes the cmd-t feature work more good
 let g:ctrlp_working_path_mode = 0
 
+" Don't show unnecessary stuff in the NERDTree
 let NERDTreeIgnore=['\.o$', '\~$', '\.git/','\.swp$','\.pyc$']
+
+" Force some filetypes to load
 au BufRead,BufNewFile *.html set filetype=htmljinja
 au BufRead,BufNewFile *.wsgi set filetype=python
 au BufRead,BufNewFile *.json set filetype=json
@@ -11,16 +14,21 @@ au BufRead,BufNewFile *.scss set filetype=scss
 au BufRead,BufNewFile *nginx* set ft=nginx
 au BufRead,BufNewFile *apache* set ft=apache
 
+" Make sure our tabbing rules are enforced
 au BufRead,BufNewFile * set tw=0 textwidth=0
 au BufEnter *.php set noexpandtab shiftwidth=4 tabstop=4
 au BufEnter *.py set expandtab
 au BufEnter *.wsgi set expandtab
+au BufEnter *.md set expandtab shiftwidth=4 tabstop=4 softtabstop=4
+
+" These shouldn't actually work
 "au BufEnter python set expandtab shiftwidth=4 tabstop=4 softtabstop=4
 "au BufEnter css,scss set expandtab shiftwidth=4 tabstop=4 softtabstop=4
 "au BufEnter javascript set expandtab shiftwidth=2 tabstop=2 softtabstop=2
 "au BufEnter json set expandtab shiftwidth=2 tabstop=2 softtabstop=2
 "au BufEnter php set expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
+" I don't know what this does
 "augroup json_autocmd
     "autocmd!
     "autocmd FileType json set autoindent
@@ -38,9 +46,11 @@ let g:ackprg="ack -H --nocolor --nogroup --column --type-add coffee=.coffee --ty
 " ignore stuff in cmd+t/ctrl-p
 set wildignore+=/.DS*,*.o,*.jpg,*.jpeg,*.png,*.gif,*.psd,*.pyc,*.bz2,*.gz,*.zip,*.ico,*.tgz
 
+" Use the fancy symbols. You need to use one of the hacked fonts. Works in Terminal and over ssh.
 let g:Powerline_symbols = 'fancy'
 
 " Enable spell check
+au BufEnter * setlocal nospell
 au BufEnter *.html setlocal spell spelllang=en_us
 au BufEnter *.md setlocal spell spelllang=en_us
 au BufEnter *.txt setlocal spell spelllang=en_us
@@ -48,7 +58,7 @@ au BufEnter *.json setlocal spell spelllang=en_us
 
 set sessionoptions-=options
 
-" Enable mouse
+" Enable mouse in the terminal and over ssh (if it's setup properly)
 set mouse=a
 
 " Moar pretty
@@ -67,4 +77,7 @@ filetype plugin indent on
 autocmd filetype css setlocal equalprg=csstidy\ -\ --silent=true\ --sort_properties=true
 
 "make esc deselect everything
-nnoremap <esc> :noh<return><esc>
+"nnoremap <esc> :noh<return><esc>
+
+"Automatically load .lvimrc files
+let g:localvimrc_ask=0
