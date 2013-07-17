@@ -10,18 +10,12 @@ au BufRead,BufNewFile *.scss set filetype=scss
 au BufRead,BufNewFile *nginx* set ft=nginx
 au BufRead,BufNewFile *apache* set ft=apache
 
+" Make sure our tabbing rules are enforced
 au BufRead,BufNewFile * set tw=0 textwidth=0
-au BufEnter * set expandtab shiftwidth=4 tabstop=4 softtabstop=4
-
-augroup json_autocmd
-    autocmd!
-    autocmd FileType json set autoindent
-    autocmd FileType json set formatoptions=tcq2l
-    autocmd FileType json set textwidth=78 shiftwidth=2
-    autocmd FileType json set softtabstop=2 tabstop=8
-    autocmd FileType json set expandtab
-    autocmd FileType json set foldmethod=syntax
-augroup END
+au BufEnter *.php set noexpandtab shiftwidth=4 tabstop=4
+au BufEnter *.py set expandtab
+au BufEnter *.wsgi set expandtab
+au BufEnter *.md set expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
 set wrap
 
@@ -32,7 +26,11 @@ set wildignore+=/.DS*,*.o,*.jpg,*.jpeg,*.png,*.gif,*.psd,*.pyc,*.bz2,*.gz,*.zip,
 let g:Powerline_symbols = 'fancy'
 
 " Enable spell check
-setlocal spell spelllang=en_us
+au BufEnter * setlocal nospell
+au BufEnter *.html setlocal spell spelllang=en_us
+au BufEnter *.md setlocal spell spelllang=en_us
+au BufEnter *.txt setlocal spell spelllang=en_us
+au BufEnter *.json setlocal spell spelllang=en_us
 
 set sessionoptions-=options
 
@@ -41,6 +39,15 @@ set mouse=a
 
 " Moar pretty
 set t_Co=256
+
+" Set terminal title
+let &titlestring = fnamemodify(getcwd(), ":t")
+set t_ts=]1;
+set t_fs=
+set title
+
+" HTML Indenting
+filetype plugin indent on
 
 " Format CSS
 autocmd filetype css setlocal equalprg=csstidy\ -\ --silent=true\ --sort_properties=true
