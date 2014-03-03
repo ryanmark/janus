@@ -7,4 +7,7 @@ set guifont=Hermit:h16
 set background=dark
 set transparency=8
 set guioptions=egmrt
-set colorcolumn=100
+"set colorcolumn=100
+
+execute "set colorcolumn=" . join(range(101,335), ',')
+highlight ColorColumn guibg=#194550

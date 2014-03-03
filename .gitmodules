@@ -16,9 +16,9 @@
 [submodule "python"]
 	path = python
 	url = https://github.com/vim-scripts/python.vim--Vasiliev.git
-[submodule "powerline"]
-	path = powerline
-	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "CSScomb-for-Vim"]
+	path = CSScomb-for-Vim
+	url = https://github.com/miripiruni/CSScomb-for-Vim.git
 [submodule "vim-json"]
 	path = vim-json
 	url = git://github.com/helino/vim-json.git
