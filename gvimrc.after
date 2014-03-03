@@ -1,11 +1,10 @@
-set guifont=Inconsolata-dz\ for\ Powerline:h14
-
 syntax enable
-set background=dark
-colorscheme solarized
-set transparency=8
 
-set guioptions=egmrt
-
-set colorcolumn=80
 highlight ColorColumn guibg=#194550
+colorscheme solarized
+
+set guifont=Hermit:h16
+set background=dark
+set transparency=8
+set guioptions=egmrt
+set colorcolumn=100
