@@ -1,9 +1,9 @@
 [submodule "extradite"]
 	path = extradite
 	url = https://github.com/int3/vim-extradite
-[submodule "zencoding"]
-	path = zencoding
-	url = https://github.com/mattn/zencoding-vim.git
+[submodule "emmet"]
+	path = emmet
+	url = https://github.com/mattn/emmet-vim.git
 [submodule "localvimrc"]
 	path = localvimrc
 	url = https://github.com/vim-scripts/localvimrc.git
