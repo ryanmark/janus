@@ -20,8 +20,12 @@ For powerline (on OS X):
 
     brew install ctags-exuberant
 
-For flake8:
+For flake8 (super nice python syntax checking):
 
     sudo pip install flake8
+
+For Arduino integration:
+
+    sudo pip install ino
 
 And install the font [Inconsolata-dz-Powerline.otf](https://gist.github.com/raw/1595572/51bdd743cc1cc551c49457fe1503061b9404183f/Inconsolata-dz-Powerline.otf).
