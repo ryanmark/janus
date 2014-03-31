@@ -65,5 +65,8 @@ autocmd filetype css setlocal equalprg=csstidy\ -\ --silent=true\ --sort_propert
 "make esc deselect everything
 "nnoremap <esc> :noh<return><esc>
 
-"Automatically load .lvimrc files
+" Automatically load .lvimrc files
 let g:localvimrc_ask=0
+
+" Disable line length warnings
+let g:syntastic_python_flake8_args="--ignore=E501"

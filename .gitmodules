@@ -25,9 +25,6 @@
 [submodule "vim-powerline"]
 	path = vim-powerline
 	url = git://github.com/Lokaltog/vim-powerline.git
-[submodule "vim-flake8"]
-	path = vim-flake8
-	url = git://github.com/nvie/vim-flake8.git
 [submodule "emmet-vim"]
 	path = emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
