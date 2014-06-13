@@ -2,7 +2,7 @@
 let g:ctrlp_working_path_mode = 0
 
 " Don't show unnecessary stuff in the NERDTree
-let NERDTreeIgnore=['\.o$', '\~$', '\.git/','\.swp$','\.pyc$']
+let NERDTreeIgnore=['\.o$', '\~$', '\.git/','\.swp$','\.pyc$','\.bundle$']
 
 " Force some filetypes to load
 au BufRead,BufNewFile *.html set filetype=htmljinja
@@ -24,13 +24,15 @@ au BufEnter *.md set expandtab shiftwidth=4 tabstop=4 softtabstop=4
 au BufEnter *.css,*.scss set expandtab shiftwidth=4 tabstop=4 softtabstop=4
 au BufEnter *.js set expandtab shiftwidth=2 tabstop=2 softtabstop=2
 au BufEnter *.json set expandtab shiftwidth=2 tabstop=2 softtabstop=2
+au BufEnter *.html set expandtab shiftwidth=2 tabstop=2 softtabstop=2
+au BufEnter *.rb set expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 set wrap
 
-let g:ackprg="ack -H --nocolor --nogroup --column --type-add coffee=.coffee --type-add sass=.sass,.scss"
+let g:ackprg="ack -H --nocolor --nogroup --column --type-add coffee=.coffee --type-add sass=.sass,.scss --ignore-dir=.bundle"
 
 " ignore stuff in cmd+t/ctrl-p
-set wildignore+=/.DS*,*.o,*.jpg,*.jpeg,*.png,*.gif,*.psd,*.pyc,*.bz2,*.gz,*.zip,*.ico,*.tgz
+set wildignore+=/.DS*,*.o,*.jpg,*.jpeg,*.png,*.gif,*.psd,*.pyc,*.bz2,*.gz,*.zip,*.ico,*.tgz,/.bundle*
 
 " Use the fancy symbols. You need to use one of the hacked fonts. Works in Terminal and over ssh.
 let g:Powerline_symbols = 'fancy'
@@ -70,3 +72,6 @@ let g:localvimrc_ask=0
 
 " Disable line length warnings
 let g:syntastic_python_flake8_args="--ignore=E501"
+
+" Use rubocop
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
