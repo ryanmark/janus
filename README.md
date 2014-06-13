@@ -23,6 +23,10 @@ For powerline (on OS X):
 For flake8 (super nice python syntax checking):
 
     sudo pip install flake8
+    
+For rubocop (super nice ruby style checking):
+
+    sudo gem install rubocop
 
 For Arduino integration:
 
