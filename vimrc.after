@@ -2,7 +2,8 @@
 let g:ctrlp_working_path_mode = 0
 
 " Don't show unnecessary stuff in the NERDTree
-let NERDTreeIgnore=['\.o$', '\~$', '\.git/','\.swp$','\.pyc$','\.bundle$']
+let NERDTreeIgnore=['^\.DS','\.o$','\~$','^\.git$','\.swp$','\.pyc$','^\.bundle$','^\.sass-cache$']
+let NERDTreeShowHidden=1
 
 " Force some filetypes to load
 au BufRead,BufNewFile *.html set filetype=htmljinja
@@ -21,7 +22,7 @@ au BufEnter *.php set noexpandtab shiftwidth=4 tabstop=4
 au BufEnter *.py set expandtab
 au BufEnter *.wsgi set expandtab
 au BufEnter *.md set expandtab shiftwidth=4 tabstop=4 softtabstop=4
-au BufEnter *.css,*.scss set expandtab shiftwidth=4 tabstop=4 softtabstop=4
+au BufEnter *.css,*.scss set expandtab shiftwidth=2 tabstop=2 softtabstop=2
 au BufEnter *.js set expandtab shiftwidth=2 tabstop=2 softtabstop=2
 au BufEnter *.json set expandtab shiftwidth=2 tabstop=2 softtabstop=2
 au BufEnter *.html set expandtab shiftwidth=2 tabstop=2 softtabstop=2
@@ -29,10 +30,10 @@ au BufEnter *.rb set expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 set wrap
 
-let g:ackprg="ack -H --nocolor --nogroup --column --type-add coffee=.coffee --type-add sass=.sass,.scss --ignore-dir=.bundle"
+let g:ackprg="ack -H --nocolor --nogroup --column --type-add coffee=.coffee --type-add sass=.sass,.scss --ignore-dir=.bundle --ignore-dir=.sass-cache --ignore-dir=.git --ignore-dir=public/cache"
 
 " ignore stuff in cmd+t/ctrl-p
-set wildignore+=/.DS*,*.o,*.jpg,*.jpeg,*.png,*.gif,*.psd,*.pyc,*.bz2,*.gz,*.zip,*.ico,*.tgz,/.bundle*
+set wildignore+=/.DS*,*.o,*.jpg,*.jpeg,*.png,*.gif,*.psd,*.pyc,*.bz2,*.gz,*.zip,*.ico,*.tgz,/.bundle*,/.sass-cache*,/public/cache*
 
 " Use the fancy symbols. You need to use one of the hacked fonts. Works in Terminal and over ssh.
 let g:Powerline_symbols = 'fancy'
