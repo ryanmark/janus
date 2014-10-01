@@ -32,4 +32,11 @@ For Arduino integration:
 
     sudo pip install ino
 
-And install the font [Inconsolata-dz-Powerline.otf](https://gist.github.com/raw/1595572/51bdd743cc1cc551c49457fe1503061b9404183f/Inconsolata-dz-Powerline.otf).
+And install the font [Hermit](https://pcaro.es/d/otf-hermit-1.21.tar.gz).
+
+## Misc.
+
+To use my flake8 config, create a symlink as follows:
+
+    cd ~/.config/
+    ln -s ~/.janus/config/flake8
