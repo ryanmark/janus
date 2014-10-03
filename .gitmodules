@@ -31,3 +31,6 @@
 [submodule "vim-arduino-ino"]
 	path = vim-arduino-ino
 	url = https://github.com/jplaut/vim-arduino-ino.git
+[submodule "vim-jst"]
+	path = vim-jst
+	url = git@github.com:briancollins/vim-jst.git

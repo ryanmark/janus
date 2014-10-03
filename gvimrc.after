@@ -1,11 +1,10 @@
 syntax enable
 
-highlight ColorColumn guibg=#194550
 colorscheme solarized
 
-set guifont=Hermit:h16
+set guifont=Inconsolata-dz\ for\ Powerline:h16
 set background=dark
-set transparency=8
+"set transparency=8
 set guioptions=egmrt
 "set colorcolumn=100
 
