@@ -32,6 +32,14 @@ For Arduino integration:
 
     sudo pip install ino
 
+For jscs (javascript style checking):
+
+    sudo npm install -g jscs
+
+For jsonlint (JSON style checking):
+
+    sudo npm install -g jsonlint
+
 And install the font [Hermit](https://pcaro.es/d/otf-hermit-1.21.tar.gz).
 
 ## Misc.
