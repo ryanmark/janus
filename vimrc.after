@@ -36,6 +36,8 @@ let g:ackprg="ack -H --nocolor --nogroup --column --type-add coffee=.coffee --ty
 set wildignore+=/.DS*,*.o,*.jpg,*.jpeg,*.png,*.gif,*.psd,*.pyc,*.bz2,*.gz,*.zip,*.ico,*.tgz,/.bundle*,/.sass-cache*,/public/cache*,/node_modules*,/build*
 
 " Use the fancy symbols. You need to use one of the hacked fonts. Works in Terminal and over ssh.
+let g:airline_powerline_fonts = 1
+"let g:airline_theme=solarized
 let g:Powerline_symbols = 'fancy'
 
 " Enable spell check
