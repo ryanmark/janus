@@ -37,3 +37,9 @@
 [submodule "editorconfig-vim"]
 	path = editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim
+[submodule "vim-airline"]
+	path = vim-airline
+	url = git@github.com:bling/vim-airline.git
+[submodule "fonts"]
+	path = fonts
+	url = git@github.com:powerline/fonts.git
