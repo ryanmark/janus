@@ -8,5 +8,5 @@ set background=dark
 set guioptions=egmrt
 "set colorcolumn=100
 
-execute "set colorcolumn=" . join(range(101,335), ',')
+execute "set colorcolumn=" . join(range(81,335), ',')
 highlight ColorColumn guibg=#194550

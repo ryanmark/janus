@@ -86,7 +86,10 @@ autocmd filetype css setlocal equalprg=csstidy\ -\ --silent=true\ --sort_propert
 let g:localvimrc_ask=0
 
 " Disable line length warnings
-let g:syntastic_python_flake8_args="--ignore=E501"
+"let g:syntastic_python_flake8_args="--ignore=E501"
 
 " Use rubocop
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+
+" User EditorConfig
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
