@@ -43,3 +43,9 @@
 [submodule "fonts"]
 	path = fonts
 	url = git@github.com:powerline/fonts.git
+[submodule "fish.vim"]
+	path = fish.vim
+	url = git@github.com:kergoth/fish.vim.git
+[submodule "vim-jade"]
+	path = vim-jade
+	url = git://github.com/digitaltoad/vim-jade.git

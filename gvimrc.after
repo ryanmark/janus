@@ -10,3 +10,6 @@ set guioptions=egmrt
 
 execute "set colorcolumn=" . join(range(81,335), ',')
 highlight ColorColumn guibg=#194550
+
+" Don't show stupid ruby tooltips
+au BufEnter * set noballooneval
