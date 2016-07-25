@@ -1,2 +1,4 @@
 set shell=/bin/sh
 let g:syntastic_shell = "/bin/sh"
+let mapleader = "\\"
+let maplocalleader = "\\"

@@ -40,7 +40,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " ignores for NERDTree
-let NERDTreeIgnore=['^\.bundle$','^\.sass-cache$','^\.git$','^\.DS.*$']
+let NERDTreeIgnore=['^\.bundle$','^\.sass-cache$','^\.git$','^\.DS.*$','\.pyc$']
 let NERDTreeShowHidden=1
 
 " Use the fancy symbols. You need to use one of the hacked fonts. Works in Terminal and over ssh.
