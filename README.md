@@ -40,7 +40,11 @@ For jsonlint (JSON style checking):
 
     sudo npm install -g jsonlint
 
-And install the font [Hermit](https://pcaro.es/d/otf-hermit-1.21.tar.gz).
+## Fonts
+
+Find [powerline-enabled fonts here](https://github.com/powerline/fonts).
+
+Currently using Meslo.
 
 ## Misc.
 
