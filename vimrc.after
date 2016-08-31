@@ -16,15 +16,15 @@ au BufRead,BufNewFile *apache* set filetype=apache
 
 " Make sure our tabbing rules are enforced
 au BufRead,BufNewFile * set tw=0 textwidth=0
-au BufEnter *.php set noexpandtab shiftwidth=4 tabstop=4
-au BufEnter *.py set expandtab
-au BufEnter *.wsgi set expandtab
-au BufEnter *.md set expandtab shiftwidth=4 tabstop=4 softtabstop=4
-au BufEnter *.css,*.scss set expandtab shiftwidth=2 tabstop=2 softtabstop=2
-au BufEnter *.js set expandtab shiftwidth=2 tabstop=2 softtabstop=2
-au BufEnter *.json set expandtab shiftwidth=2 tabstop=2 softtabstop=2
-au BufEnter *.html set expandtab shiftwidth=2 tabstop=2 softtabstop=2
-au BufEnter *.rb set expandtab shiftwidth=2 tabstop=2 softtabstop=2
+au BufEnter *.php setlocal noexpandtab shiftwidth=4 tabstop=4
+au BufEnter *.py setlocal expandtab
+au BufEnter *.wsgi setlocal expandtab
+au BufEnter *.md setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+au BufEnter *.css,*.scss setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+au BufEnter *.js setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+au BufEnter *.json setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+au BufEnter *.html setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+au BufEnter *.rb setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 set wrap
 
@@ -68,7 +68,7 @@ set mouse=a
 set t_Co=256
 
 " Set terminal title
-let &titlestring = fnamemodify(getcwd(), ":t")
+let &titlestring=fnamemodify(getcwd(), ":t")
 set t_ts=]1;
 set t_fs=
 set title
@@ -93,3 +93,10 @@ let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
 " User EditorConfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+
+" Assuming solarized colorscheme
+colorscheme solarized
+
+" Set line length coloring
+execute "set colorcolumn=" . join(range(81,335), ',')
+highlight ColorColumn guibg=#194550
