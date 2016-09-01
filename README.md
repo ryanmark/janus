@@ -22,25 +22,33 @@ For powerline (on OS X):
 
 For flake8 (super nice python syntax checking):
 
-    sudo pip install flake8
+    pip install flake8
     
 For rubocop (super nice ruby style checking):
 
-    sudo gem install rubocop
+    gem install rubocop
 
 For Arduino integration:
 
-    sudo pip install ino
+    pip install ino
+
+For find all in project:
+
+    brew install ack
 
 For jscs (javascript style checking):
 
-    sudo npm install -g jscs
+    npm install -g jscs
 
 For jsonlint (JSON style checking):
 
-    sudo npm install -g jsonlint
+    npm install -g jsonlint
 
-And install the font [Hermit](https://pcaro.es/d/otf-hermit-1.21.tar.gz).
+## Fonts
+
+Find [powerline-enabled fonts here](https://github.com/powerline/fonts).
+
+Currently using Meslo.
 
 ## Misc.
 
