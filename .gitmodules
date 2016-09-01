@@ -52,3 +52,6 @@
 [submodule "greplace"]
 	path = greplace
 	url = git@github.com:yegappan/greplace.git
+[submodule "Nvim-R"]
+	path = Nvim-R
+	url = git@github.com:jalvesaq/Nvim-R.git
