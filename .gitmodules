@@ -22,9 +22,6 @@
 [submodule "vim-json"]
 	path = vim-json
 	url = git://github.com/helino/vim-json.git
-[submodule "vim-powerline"]
-	path = vim-powerline
-	url = git://github.com/Lokaltog/vim-powerline.git
 [submodule "emmet-vim"]
 	path = emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
