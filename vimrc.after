@@ -46,7 +46,14 @@ let NERDTreeShowHidden=1
 " Use the fancy symbols. You need to use one of the hacked fonts. Works in Terminal and over ssh.
 let g:airline_powerline_fonts = 1
 "let g:airline_theme=solarized
-let g:Powerline_symbols = 'fancy'
+" Dunno why I have to specify these
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
 
 " Enable spell check
 au BufEnter * setlocal nospell
