@@ -55,3 +55,6 @@
 [submodule "vim-airline-themes"]
 	path = vim-airline-themes
 	url = git@github.com:vim-airline/vim-airline-themes.git
+[submodule "rust.vim"]
+	path = rust.vim
+	url = git@github.com:wting/rust.vim.git
