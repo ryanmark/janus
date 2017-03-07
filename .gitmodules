@@ -19,9 +19,6 @@
 [submodule "CSScomb-for-Vim"]
 	path = CSScomb-for-Vim
 	url = https://github.com/miripiruni/CSScomb-for-Vim.git
-[submodule "vim-json"]
-	path = vim-json
-	url = git://github.com/helino/vim-json.git
 [submodule "emmet-vim"]
 	path = emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
