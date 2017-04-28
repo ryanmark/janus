@@ -92,11 +92,19 @@ autocmd filetype css setlocal equalprg=csstidy\ -\ --silent=true\ --sort_propert
 " Automatically load .lvimrc files
 let g:localvimrc_ask=0
 
+" Syntax checking
+
+" Check on save
+let g:syntastic_mode_map = { "mode": "active" }
+
+" Don't show error location list by default
+let g:syntastic_auto_loc_list = 0
+
 " Disable line length warnings
 "let g:syntastic_python_flake8_args="--ignore=E501"
 
 " Use rubocop
-let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+let g:syntastic_ruby_checkers = ['rubocop']
 
 " User EditorConfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
