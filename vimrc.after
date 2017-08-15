@@ -26,6 +26,8 @@ au BufEnter *.json setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 au BufEnter *.html setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 au BufEnter *.rb setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
+au BufEnter * EditorConfigReload
+
 set wrap
 
 let g:ackprg="ack -H --nocolor --nogroup --column --type-add coffee=.coffee --type-add sass=.sass,.scss --ignore-dir=.bundle --ignore-dir=.sass-cache --ignore-dir=.git --ignore-dir=public/cache"
