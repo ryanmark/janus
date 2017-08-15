@@ -16,15 +16,9 @@
 [submodule "python"]
 	path = python
 	url = https://github.com/vim-scripts/python.vim--Vasiliev.git
-[submodule "CSScomb-for-Vim"]
-	path = CSScomb-for-Vim
-	url = https://github.com/miripiruni/CSScomb-for-Vim.git
 [submodule "emmet-vim"]
 	path = emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
-[submodule "vim-arduino-ino"]
-	path = vim-arduino-ino
-	url = https://github.com/jplaut/vim-arduino-ino.git
 [submodule "vim-jst"]
 	path = vim-jst
 	url = git@github.com:briancollins/vim-jst.git
