@@ -17,8 +17,8 @@ au BufRead,BufNewFile *apache* set filetype=apache
 " Make sure our tabbing rules are enforced
 au BufRead,BufNewFile * set tw=0 textwidth=0
 au BufEnter *.php setlocal noexpandtab shiftwidth=4 tabstop=4
-au BufEnter *.py setlocal expandtab
-au BufEnter *.wsgi setlocal expandtab
+au BufEnter *.py setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+au BufEnter *.wsgi setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 au BufEnter *.md setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 au BufEnter *.css,*.scss setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 au BufEnter *.js setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
@@ -33,7 +33,7 @@ set wrap
 let g:ackprg="ack -H --nocolor --nogroup --column --type-add coffee=.coffee --type-add sass=.sass,.scss --ignore-dir=.bundle --ignore-dir=.sass-cache --ignore-dir=.git --ignore-dir=public/cache"
 
 " global ignores
-set wildignore+=*.o,*.pyc,*.swp,*/.bundle/*,*/.git/*,*.DS*,*/.sass-cache/*
+set wildignore+=*.o,*.pyc,*.swp,*/.bundle/*,*/.git/*,*.DS*,*/.sass-cache/*,*/__pycache__/*
 
 " ignores for cmd+t/ctrl-p
 let g:ctrlp_custom_ignore = {
@@ -42,7 +42,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " ignores for NERDTree
-let NERDTreeIgnore=['^\.bundle$','^\.sass-cache$','^\.git$','^\.DS.*$','\.pyc$']
+let NERDTreeIgnore=['^\.bundle$','^\.sass-cache$','^\.git$','^\.DS.*$','\.pyc$','__pycache__']
 let NERDTreeShowHidden=1
 
 " Use the fancy symbols. You need to use one of the hacked fonts. Works in Terminal and over ssh.
