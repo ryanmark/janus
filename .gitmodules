@@ -49,3 +49,6 @@
 [submodule "rust.vim"]
 	path = rust.vim
 	url = git@github.com:wting/rust.vim.git
+[submodule "vim-vue"]
+	path = vim-vue
+	url = https://github.com/posva/vim-vue.git
