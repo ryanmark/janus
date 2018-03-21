@@ -4,7 +4,7 @@ let g:ctrlp_working_path_mode = 0
 " Force some filetypes to load
 au BufRead,BufNewFile *.html set filetype=htmljinja
 au BufRead,BufNewFile *.wsgi set filetype=python
-au BufRead,BufNewFile *.json set filetype=json
+au BufRead,BufNewFile *.json,.babelrc,.eslintrc set filetype=json
 au BufRead,BufNewFile .jshintrc set filetype=json
 au BufRead,BufNewFile *.vcl set filetype=vcl
 au BufRead,BufNewFile *.scss set filetype=scss
@@ -26,6 +26,7 @@ au BufEnter *.json setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 au BufEnter *.html setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 au BufEnter *.rb setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
+" Make sure to reload the .editorconfig in case things have changed
 au BufEnter * EditorConfigReload
 
 set wrap
@@ -118,5 +119,6 @@ let g:syntastic_javascript_checkers = ['eslint']
 colorscheme solarized
 
 " Set line length coloring
-execute "set colorcolumn=" . join(range(81,335), ',')
+"execute "set colorcolumn=" . join(range(81,335), ',')
+execute "set colorcolumn=81,101"
 highlight ColorColumn guibg=#194550
