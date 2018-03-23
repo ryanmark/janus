@@ -7,21 +7,9 @@
 [submodule "localvimrc"]
 	path = localvimrc
 	url = https://github.com/vim-scripts/localvimrc.git
-[submodule "vim-less"]
-	path = vim-less
-	url = https://github.com/groenewege/vim-less.git
-[submodule "nginx"]
-	path = nginx
-	url = https://github.com/vim-scripts/nginx.vim.git
-[submodule "python"]
-	path = python
-	url = https://github.com/vim-scripts/python.vim--Vasiliev.git
 [submodule "emmet-vim"]
 	path = emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
-[submodule "vim-jst"]
-	path = vim-jst
-	url = git@github.com:briancollins/vim-jst.git
 [submodule "editorconfig-vim"]
 	path = editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim
@@ -31,24 +19,12 @@
 [submodule "fonts"]
 	path = fonts
 	url = git@github.com:powerline/fonts.git
-[submodule "fish.vim"]
-	path = fish.vim
-	url = git@github.com:kergoth/fish.vim.git
 [submodule "vim-jade"]
 	path = vim-jade
 	url = git://github.com/digitaltoad/vim-jade.git
 [submodule "greplace"]
 	path = greplace
 	url = git@github.com:yegappan/greplace.git
-[submodule "Nvim-R"]
-	path = Nvim-R
-	url = git@github.com:jalvesaq/Nvim-R.git
 [submodule "vim-airline-themes"]
 	path = vim-airline-themes
 	url = git@github.com:vim-airline/vim-airline-themes.git
-[submodule "rust.vim"]
-	path = rust.vim
-	url = git@github.com:wting/rust.vim.git
-[submodule "vim-vue"]
-	path = vim-vue
-	url = https://github.com/posva/vim-vue.git
