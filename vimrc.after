@@ -2,7 +2,7 @@
 let g:ctrlp_working_path_mode = 0
 
 " Force some filetypes to load
-au BufRead,BufNewFile *.html set filetype=htmljinja
+au BufRead,BufNewFile *.html,*.njk set filetype=htmljinja
 au BufRead,BufNewFile *.wsgi set filetype=python
 au BufRead,BufNewFile *.json,.babelrc,.eslintrc set filetype=json
 au BufRead,BufNewFile .jshintrc set filetype=json
