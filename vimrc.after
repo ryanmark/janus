@@ -2,10 +2,10 @@
 let g:ctrlp_working_path_mode = 0
 
 " Force some filetypes to load
+au BufRead,BufNewFile Dockerfile* set filetype=dockerfile
 au BufRead,BufNewFile *.html,*.njk set filetype=htmljinja
 au BufRead,BufNewFile *.wsgi set filetype=python
-au BufRead,BufNewFile *.json,.babelrc,.eslintrc set filetype=json
-au BufRead,BufNewFile .jshintrc set filetype=json
+au BufRead,BufNewFile *.json,.babelrc,.eslintrc,.jshintrc set filetype=json
 au BufRead,BufNewFile *.vcl set filetype=vcl
 au BufRead,BufNewFile *.scss set filetype=scss
 au BufRead,BufNewFile *.pde,*.ino set filetype=arduino
@@ -31,7 +31,7 @@ au BufEnter * EditorConfigReload
 
 set wrap
 
-let g:ackprg="ack -H --nocolor --nogroup --column --type-add coffee=.coffee --type-add sass=.sass,.scss --ignore-dir=.bundle --ignore-dir=.sass-cache --ignore-dir=.git --ignore-dir=public/cache"
+let g:ackprg="ack -H --nocolor --nogroup --column --type-add sass=.sass,.scss --ignore-dir=.bundle --ignore-dir=.sass-cache --ignore-dir=.git --ignore-dir=public/cache"
 
 " global ignores
 set wildignore+=*.o,*.pyc,*.swp,*/.bundle/*,*/.git/*,*.DS*,*/.sass-cache/*,*/__pycache__/*
@@ -113,6 +113,7 @@ let g:syntastic_ruby_checkers = ['rubocop']
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 " Use eslint
+let g:syntastic_javascript_eslint_exe = 'npx eslint'
 let g:syntastic_javascript_checkers = ['eslint']
 
 " Assuming solarized colorscheme
