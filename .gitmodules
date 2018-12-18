@@ -28,3 +28,6 @@
 [submodule "vim-airline-themes"]
 	path = vim-airline-themes
 	url = git@github.com:vim-airline/vim-airline-themes.git
+[submodule "vim-graphql"]
+	path = vim-graphql
+	url = https://github.com/jparise/vim-graphql.git
