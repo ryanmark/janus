@@ -12,3 +12,5 @@ link_dot vimrc.after
 link_dot vimrc.before
 
 pip install -r requirements.txt
+
+echo Make sure to install ctags, ag, ack, rubocop, eslint too

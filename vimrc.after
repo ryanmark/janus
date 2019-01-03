@@ -1,6 +1,3 @@
-" This makes the cmd-t feature work more good
-let g:ctrlp_working_path_mode = 0
-
 " Force some filetypes to load
 au BufRead,BufNewFile Dockerfile* set filetype=dockerfile
 au BufRead,BufNewFile *.html,*.njk set filetype=htmljinja
@@ -35,6 +32,16 @@ let g:ackprg="ack -H --nocolor --nogroup --column --type-add sass=.sass,.scss --
 
 " global ignores
 set wildignore+=*.o,*.pyc,*.swp,*/.bundle/*,*/.git/*,*.DS*,*/.sass-cache/*,*/__pycache__/*
+
+" This makes the cmd-t feature work more good
+let g:ctrlp_working_path_mode = 'rwa'
+let g:ctrlp_use_caching = 1
+let g:ctrlp_clear_cache_on_exit = 1
+let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
+" Use ag if available
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
 
 " ignores for cmd+t/ctrl-p
 let g:ctrlp_custom_ignore = {
