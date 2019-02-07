@@ -10,6 +10,7 @@ au BufRead,BufNewFile *.jbuilder set filetype=ruby
 
 au BufRead,BufNewFile *nginx* set filetype=nginx
 au BufRead,BufNewFile *apache* set filetype=apache
+au BufRead,BufNewFile Pipfile set filetype=toml
 
 " Make sure our tabbing rules are enforced
 au BufRead,BufNewFile * set tw=0 textwidth=0
